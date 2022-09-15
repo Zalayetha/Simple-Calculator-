@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="flex-col-container">
+      <div class="display">
+        <h1 class="result">0</h1>
+      </div>
+
+      <!-- row 1 -->
+      <div class="flex-row-container">
+        <div class="button operator percent">%</div>
+        <div class="button operator clear-entry">CE</div>
+        <div class="button operator clear">C</div>
+        <div class="button operator delete">del</div>
+      </div>
+      <!-- row 2 -->
+      <div class="flex-row-container">
+        <div class="button operator one-divided-by">1/x</div>
+        <div class="button operator quadrate">&sup2;</div>
+        <div class="button operator square-root">&radic;</div>
+        <div class="button operator divide">&divide;</div>
+      </div>
+      <!-- row 3 -->
+      <div class="flex-row-container">
+        <div class="button">7</div>
+        <div class="button">8</div>
+        <div class="button">9</div>
+        <div class="button operator times">&times;</div>
+      </div>
+      <!-- row 4 -->
+      <div class="flex-row-container">
+        <div class="button">4</div>
+        <div class="button">5</div>
+        <div class="button">6</div>
+        <div class="button operator minus">-</div>
+      </div>
+      <!-- row 5 -->
+      <div class="flex-row-container">
+        <div class="button">1</div>
+        <div class="button">2</div>
+        <div class="button">3</div>
+        <div class="button operator plus">+</div>
+      </div>
+      <!-- row 6 -->
+      <div class="flex-row-container">
+        <div class="button negative-positif-value">+/-</div>
+        <div class="button">0</div>
+        <div class="button decimal">.</div>
+        <div class="button operator equal">&equals;</div>
+      </div>
+    </div>
+    <div id="history">
+      <h2>Calcualtion history</h2>
+      <table>
+        <thead>
+          <tr>
+            <th >First Number</th>
+            <th >Second Number</th>
+            <th >Operator</th>
+            <th >Result</th>
+          </tr>
+          <tbody class="historyList">
+          </tbody>
+        </thead>
+      </table>
+    </div>
+    <script src="assets/kalkulator.js"></script>
+    <script src="assets/storage.js" ></script>
+  </body>
+</html>
